@@ -44,3 +44,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.avaliacao {
+  display: flex;
+  justify-content: space-evenly;
+ }
