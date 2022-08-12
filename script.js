@@ -20,15 +20,18 @@ button.addEventListener('click', validaLogin);
 // https://cursos.alura.com.br/forum/topico-habitar-desabilitar-botao-65202
 
 // desabilita botão no início
-document.getElementById('submit-btn').disabled = true;
+const habButton = document.getElementById('submit-btn');
+habButton.disabled = true;
+
 // captura do input (Você concorda com o uso das informações acima?)
 const inputAgreement = document.getElementById('agreement');
-// cria o evento com as mudanças do botão
-inputAgreement.addEventListener('change', validaButton);
+
 function validaButton() {
   if (inputAgreement.checked) {
-    document.getElementById('submit-btn').disabled = false;
+    habButton.disabled = false;
   } else {
-    document.getElementById('submit-btn').disabled = true;
+    habButton.disabled = true;
   }
 }
+// cria o evento com as mudanças do botão
+inputAgreement.addEventListener('change', validaButton);
