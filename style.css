@@ -56,7 +56,17 @@ main {
 
 .avaliacao {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+}
+
+hr {
+  margin: 10px;
+}
+
+#label-rate {
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 footer {
