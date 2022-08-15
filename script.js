@@ -35,3 +35,13 @@ function validaButton() {
 }
 // cria o evento com as mudanças do botão
 inputAgreement.addEventListener('change', validaButton);
+
+const textarea = document.getElementById('textarea');
+const paragrafo = document.getElementById('counter');
+
+function contador() {
+  let counter = 500 - textarea.value.length;
+  paragrafo.innerText = counter;
+}
+
+addEventListener('input', contador);
