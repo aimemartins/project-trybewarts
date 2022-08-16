@@ -45,12 +45,3 @@ function contador() {
 }
 
 textarea.addEventListener('input', contador);
-
-// const novoForm = document.getElementById('form-data');
-// const createP = document.createElement('p');
-// const nome = document.getElementById('input-name').value;
-// const email = document.getElementById('input-email').value;
-// const casa = document.getElementById('house').value;
-
-// novoForm.appendChild(createP);
-// createP.innerText =
