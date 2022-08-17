@@ -43,5 +43,5 @@ function contador() {
   const counter = (500 - textarea.value.length);
   paragrafo.innerText = counter;
 }
-
+//
 textarea.addEventListener('input', contador);
